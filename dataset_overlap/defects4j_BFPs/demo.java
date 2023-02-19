@@ -1,0 +1,7 @@
+['D4j_id: Closure-120', 
+'Recoder_id: data0.pkl/27867', 
+"D4j_rem: ['']", 
+"D4j_add: ['if (ref.getSymbol().getScope() != ref.scope) { return false; }']", 
+"D4j_bug: ['for (BasicBlock block = ref.getBasicBlock(); block != null; block = block.getParent()) { if (block.isFunction) { break; } else if (block.isLoop) { return false;']", "D4j_fix: ['for (BasicBlock block = ref.getBasicBlock(); block != null; block = block.getParent()) { if (block.isFunction) { if (ref.getSymbol().getScope() != ref.scope) { return false; } break; } else if (block.isLoop) { return false;']", 
+'Recoder_bug: /** * @return Whether the variable is only assigned a value once for itslifetime. */ boolean isAssignedOnceInLifetime(){ Reference ref=getOneAndOnlyAssignment(); if (ref == null) { return false; } for (BasicBlock block=ref.getBasicBlock(); block != null; block=block.getParent()) { if (block.isFunction) { break; } else if (block.isLoop) { return false; } } return true; }', 
+'Recoder_fix: /** * @return Whether the variable is only assigned a value once for itslifetime. */ boolean isAssignedOnceInLifetime(){ Reference ref=getOneAndOnlyAssignment(); if (ref == null) { return false; } for (BasicBlock block=ref.getBasicBlock(); block != null; block=block.getParent()) { if (block.isFunction) { if (ref.getSymbol().getScope() != ref.scope) { return false; } break; } else if (block.isLoop) { return false; } } return true; }']
