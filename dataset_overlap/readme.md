@@ -36,7 +36,7 @@ Here we summarize the dataset overlap results of each training dataset with Defe
 
 > Note: The java training data of CoCoNut contains both CoCoNut 2006 and CoCoNut 2010 versions, due to the memory limitation of our experiment, here we only analyze the 2006 version.
 
-Finally, we give the source files in the training dataset where dataset overlap occurred. We suggest that researchers remove these overlapping source files in subsequent work in order to test the real repair capability on Defects4J.
+Finally, we give the source files in the training dataset which data overlap occurred. We suggest that researchers remove these overlapping source files in subsequent work in order to test the real repair capability on Defects4J.
 
 
 CoCoNut-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_CoCoNut/overlap_result.txt)
