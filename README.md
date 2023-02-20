@@ -44,20 +44,25 @@ Here we summarize the dataset overlap results of each training dataset with Defe
 | ------------- | ------------- | ------------- |
 | BFP | - | - |
 | BigFix | - | - |
-| CoCoNut | 2 | Lang-58, Lang-59 |
+| CoCoNut 2006 | 2 | Lang-58, Lang-59 |
 | CodRep | 61 | Codec-1, Codec-10, Codec-3, Codec-4, Codec-6, Collections-2, Collections-3, Collections-7, Compress-1, Compress-10, Compress-14, Compress-20, Compress-25, Compress-3, Compress-4, Compress-6, Csv-4, Csv-7, Lang-20, Lang-21, Lang-23, Lang-24, Lang-30, Lang-32, Lang-33, Lang-35, Lang-36, Lang-38, Lang-41, Lang-43, Lang-57, Lang-59, Lang-60, Lang-61, Lang-8, Math-10, Math-100, Math-104, Math-105, Math-22, Math-23, Math-32, Math-33, Math-38, Math-59, Math-6, Math-61, Math-62, Math-64, Math-65, Math-68, Math-69, Math-70, Math-72, Math-75, Math-77, Math-78, Math-81, Math-82, Math-96, Math-98 |
 | CPatMiner | 10 | Cli-31, Cli-34, Csv-4, Csv-7, JacksonCore-11, JacksonDatabind-27, JacksonDatabind-4, JacksonDatabind-50, Time-13, Time-7 |
 | MegaDiff | 99 | Closure-100, Closure-101, Closure-102, Closure-104, Closure-105, Closure-108, Closure-113, Closure-114, Closure-119, Closure-123, Closure-125, Closure-130, Closure-133, Closure-137, Closure-14, Closure-140, Closure-141, Closure-148, Closure-149, Closure-150, Closure-156, Closure-160, Closure-162, Closure-174, Closure-18, Closure-25, Closure-26, Closure-27, Closure-29, Closure-32, Closure-38, Closure-4, Closure-40, Closure-43, Closure-50, Closure-51, Closure-52, Closure-57, Closure-62, Closure-63, Closure-64, Closure-68, Closure-70, Closure-71, Closure-73, Closure-79, Closure-80, Closure-85, Closure-86, Closure-89, Closure-9, Closure-92, Closure-93, Closure-99, Codec-2, Codec-3, Codec-4, Codec-7, JacksonDatabind-1, JacksonDatabind-22, JacksonDatabind-60, JacksonDatabind-87, JxPath-10, Math-10, Math-11, Math-15, Math-16, Math-2, Math-28, Math-30, Math-33, Math-34, Math-35, Math-41, Math-46, Math-5, Math-56, Math-59, Math-63, Math-68, Math-69, Math-70, Math-72, Math-75, Math-81, Math-82, Math-83, Math-94, Math-98, Mockito-17, Mockito-29, Mockito-35, Mockito-36, Mockito-38, Mockito-6, Time-13, Time-16, Time-19, Time-4 |
 | Recoder | 7 | Math-69, Math-70, Math-79, Math-94, Closure-83, Closure-119, Closure-120 |
 
+> Note: The java training data of CoCoNut contains both CoCoNut 2006 and CoCoNut 2010 versions, due to the memory limitation of our experiment, here we only analyze the 2006 version.
 
 Finally, we give the source files in the training dataset where dataset overlap occurred. We suggest that researchers remove these overlapping source files in subsequent work in order to test the real repair capability on Defects4J.
 
 
 CoCoNut-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_CoCoNut/overlap_result.txt)
+
 CodRep-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_CodRep/overlap_result.txt)
+
 CPatMiner-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_CPatMiner/overlap_result.txt)
+
 MegaDiff-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_MegaDiff/overlap_result.txt)
+
 Recoder-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_Recoder/overlap_code_info.txt)
 
 
