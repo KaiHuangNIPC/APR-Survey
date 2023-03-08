@@ -39,15 +39,15 @@ Here we summarize the dataset overlap results of each training dataset with Defe
 Finally, we give the source files in the training dataset which data overlap occurred. We suggest that researchers remove these overlapping source files in subsequent work in order to test the real repair capability on Defects4J.
 
 
-CoCoNut-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_CoCoNut/overlap_result.txt)
+CoCoNut-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_CoCoNut/overlap_result.txt)
 
-CodRep-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_CodRep/overlap_result.txt)
+CodRep-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_CodRep/overlap_result.txt)
 
-CPatMiner-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_CPatMiner/overlap_result.txt)
+CPatMiner-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_CPatMiner/overlap_result.txt)
 
-MegaDiff-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_MegaDiff/overlap_result.txt)
+MegaDiff-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_MegaDiff/overlap_result.txt)
 
-Recoder-Defects4J Overlap: [Overlap_result](APR-Survey/dataset_overlap/overlap_D4j_Recoder/overlap_code_info.txt)
+Recoder-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_Recoder/overlap_code_info.txt)
 
 
 ## Ref
