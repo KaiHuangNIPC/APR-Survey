@@ -16,10 +16,10 @@ Here, we mainly analyze the dataset overlap problem in the current APR work usin
 
 First, we first analyzed and obtained the APR works that performed the tests on Defects4J and downloaded their corresponding training datasets.
 
-| Test Benchmark  | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V2.0 | Defects4J V2.0 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-| **APR Tool**  |  SequenceR [2]  | DLFix [3] | CoCoNut [4] | Recoder [5] | CURE [6] | RewardRepair[7] | DEAR [8] | CIRCLE [9] | Recoder [5] | RewardRepair [7] |
-| **Train Dataset**  | [BFP](https://www.google.com/url?q=https%3A%2F%2Fzenodo.org%2Frecord%2F7478730%2Ffiles%2FBFP_datasets.zip%3Fdownload%3D1&sa=D&sntz=1&usg=AOvVaw2sWE-2ztdr-uvuVUvE1nc0)+[CodRep](https://github.com/KTH/CodRep-competition/)  | [BigFix](https://drive.google.com/open?id=1KL3M-BbisVLWXyvn05V6huSLNUby_9qN) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases) | [Recoder](https://drive.google.com/drive/folders/1ECNX98qj9FMdRT2MXOUY6aQ6-sNT0b_a?usp=sharing) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases)+[MegaDiff](https://github.com/monperrus/megadiff)+[CodRep](https://github.com/KTH/CodRep-competition/)+[CodRep](https://github.com/KTH/CodRep-competition/) | [CPatMiner](https://drive.google.com/open?id=1M_0dRYqhCMh26GQbnX4Igp_2jSrTS1tV) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases) | [Recoder](https://drive.google.com/drive/folders/1ECNX98qj9FMdRT2MXOUY6aQ6-sNT0b_a?usp=sharing) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases)+[MegaDiff](https://github.com/monperrus/megadiff)+[CodRep](https://github.com/KTH/CodRep-competition/) |
+| Test Benchmark  | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V1.2 | Defects4J V2.0 | Defects4J V2.0 | Defects4J V2.0 |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |
+| **APR Tool**  |  SequenceR [2]  | DLFix [3] | CoCoNut [4] | Recoder [5] | CURE [6] | RewardRepair[7] | DEAR [8] | CIRCLE [9] |  AlphaRepair [10] | Recoder [5] | RewardRepair [7] | AlphaRepair [10] |
+| **Train Dataset**  | [BFP](https://www.google.com/url?q=https%3A%2F%2Fzenodo.org%2Frecord%2F7478730%2Ffiles%2FBFP_datasets.zip%3Fdownload%3D1&sa=D&sntz=1&usg=AOvVaw2sWE-2ztdr-uvuVUvE1nc0)+[CodRep](https://github.com/KTH/CodRep-competition/)  | [BigFix](https://drive.google.com/open?id=1KL3M-BbisVLWXyvn05V6huSLNUby_9qN) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases) | [Recoder](https://drive.google.com/drive/folders/1ECNX98qj9FMdRT2MXOUY6aQ6-sNT0b_a?usp=sharing) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases)+[MegaDiff](https://github.com/monperrus/megadiff)+[CodRep](https://github.com/KTH/CodRep-competition/)+[CodRep](https://github.com/KTH/CodRep-competition/) | [CPatMiner](https://drive.google.com/open?id=1M_0dRYqhCMh26GQbnX4Igp_2jSrTS1tV) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases) |   [CodeSearchNet](https://github.com/github/CodeSearchNet)  | [Recoder](https://drive.google.com/drive/folders/1ECNX98qj9FMdRT2MXOUY6aQ6-sNT0b_a?usp=sharing) | [CoCoNut](https://github.com/lin-tan/CoCoNut-Artifact/releases)+[MegaDiff](https://github.com/monperrus/megadiff)+[CodRep](https://github.com/KTH/CodRep-competition/) |  [CodeSearchNet](https://github.com/github/CodeSearchNet)  |
 
 
 Second, we use exact matching to check the presence of Defects4J's patch information in the large-scale training dataset.
@@ -33,6 +33,8 @@ Here we summarize the dataset overlap results of each training dataset with Defe
 | CPatMiner | 10 | Cli-31, Cli-34, Csv-4, Csv-7, JacksonCore-11, JacksonDatabind-27, JacksonDatabind-4, JacksonDatabind-50, Time-13, Time-7 |
 | MegaDiff | 99 | Closure-100, Closure-101, Closure-102, Closure-104, Closure-105, Closure-108, Closure-113, Closure-114, Closure-119, Closure-123, Closure-125, Closure-130, Closure-133, Closure-137, Closure-14, Closure-140, Closure-141, Closure-148, Closure-149, Closure-150, Closure-156, Closure-160, Closure-162, Closure-174, Closure-18, Closure-25, Closure-26, Closure-27, Closure-29, Closure-32, Closure-38, Closure-4, Closure-40, Closure-43, Closure-50, Closure-51, Closure-52, Closure-57, Closure-62, Closure-63, Closure-64, Closure-68, Closure-70, Closure-71, Closure-73, Closure-79, Closure-80, Closure-85, Closure-86, Closure-89, Closure-9, Closure-92, Closure-93, Closure-99, Codec-2, Codec-3, Codec-4, Codec-7, JacksonDatabind-1, JacksonDatabind-22, JacksonDatabind-60, JacksonDatabind-87, JxPath-10, Math-10, Math-11, Math-15, Math-16, Math-2, Math-28, Math-30, Math-33, Math-34, Math-35, Math-41, Math-46, Math-5, Math-56, Math-59, Math-63, Math-68, Math-69, Math-70, Math-72, Math-75, Math-81, Math-82, Math-83, Math-94, Math-98, Mockito-17, Mockito-29, Mockito-35, Mockito-36, Mockito-38, Mockito-6, Time-13, Time-16, Time-19, Time-4 |
 | Recoder | 8 | Math-69, Math-70, Math-79, Math-94, Closure-83, Closure-119, Closure-120, Closure-121 |
+| CodeSearchNet | 21 | Cli_34, Jsoup_74, Lang_46, Time_27, Jsoup_86, Time_10, Cli_22, Cli_5, Time_15, Time_3, Lang_34, Time_12, Gson_4, Time_8, Cli_33, Time_9, Jsoup_60, Cli_29, Mockito_5, Jsoup_87, Closure_109 |
+
 
 > Note: The java training data of CoCoNut contains both CoCoNut 2006 and CoCoNut 2010 versions, due to the memory limitation of our experiment, here we only analyze the 2006 version.
 
@@ -48,6 +50,8 @@ CPatMiner-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-
 MegaDiff-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_MegaDiff/overlap_result.txt)
 
 Recoder-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_Recoder/overlap_code_info.txt)
+
+CodeSearchNet-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Survey/blob/main/dataset_overlap/overlap_D4j_CodeSearchNet/overlap_result.txt)
 
 
 ## Ref
@@ -69,3 +73,5 @@ Recoder-Defects4J Overlap: [Overlap_result](https://github.com/huangkNIPC/APR-Su
 [8] Li Y, Wang S, Nguyen T N. Dear: A novel deep learning-based approach for automated program repair[C]//Proceedings of the 44th International Conference on Software Engineering. 2022: 511-523.
 
 [9] Yuan W, Zhang Q, He T, et al. CIRCLE: continual repair across programming languages[C]//Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis. 2022: 678-690.
+
+[10] Xia C S, Zhang L. Less training, more repairing please: revisiting automated program repair via zero-shot learning[C]//Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering. 2022: 959-971.
